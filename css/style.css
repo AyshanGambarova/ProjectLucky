@@ -72,6 +72,7 @@ body {
   text-decoration: none;
 }
 #office-supplies,#foods {
+  position: relative;
   padding: 50px 0px;
   background-color: #f8f8f8;
   background-image: url("../images/pattern/leaf-office-left-1.png"),
@@ -82,7 +83,7 @@ body {
 .section-header {
   position: relative;
 }
-#office-supplies .section-header .line,#foods .section-header .line {
+#office-supplies .section-header .line,#foods .section-header .line,#brends .section-header .line {
   width: 25px;
   height: 4px;
   background-color: #106853;
@@ -141,7 +142,7 @@ body {
   background-position: center left;
   background-repeat: no-repeat;
 }
-#categories .section-header .line {
+.section-header .line {
   width: 25px;
   height: 4px;
   background-color: white;
@@ -149,11 +150,11 @@ body {
   position: absolute;
   left: 49%;
 }
-#categories .category {
+.category {
   position: relative;
   overflow: hidden;
 }
-#categories .category .name {
+.category .name {
     position: absolute;
     top: 9px;
     left: 15px;
@@ -169,13 +170,64 @@ body {
     top: 0px;
     left: 0px;
 }
-#categories .category .img:hover{
+.category .img:hover{
     transform: scale(1.05);
     transition-duration: 0.4s;
     -webkit-transform: scale(1.05);
 }
-#categories .category .img:hover .cover{
+.category .img:hover .cover{
     display: block;
+}
+#category-2 {
+  position: relative;
+  height: 380px;
+  padding: 50px 0px;
+  background-color:#106853;
+  background-image: url("../images/pattern/leaf-category-left-1.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+#category-2 .absolute{
+  position: absolute;
+    top: -35px;
+    left: 65px;
+    right: 65px;
+}
+#brends{
+  padding: 50px 0px;
+  padding-bottom: 10px;
+}
+.owl-carousel .brends{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.owl-carousel .brends img{
+  width: 100px;
+}
+footer{
+  background-color: #f2f2f2;
+}
+footer h6,i{
+  color: #fb881d;
+}
+footer p{
+  margin-bottom: 0px;
+}
+footer .contact{
+  font-size: 14px;
+    font-weight: 600;
+}
+footer .link{
+  font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black!important;
+}
+footer .link-2{
+  color: #fb881d;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1024px) and (min-width: 768px)  {
   #main-header .navbar .nav-bottom ul li {
